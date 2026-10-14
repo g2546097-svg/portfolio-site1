@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang ="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Nagomi Yamaoka</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#top">Nagomi Yamaoka</a>
+            <nav>
+                <a href="#me">Me</a>
+                <a href="#works">Works</a>
+            </nav>
+        </header>
+        <main>
+            <section id="top">
+            <img src="./media/IMG_3148.jpeg" width="80%" class="top-image">
+            <p id="weather-icon"> </p>
+            <h1>
+                Nagomi Yamaoka<br>
+                Portfolio
+            </h1>
+            </section>
+            <section id="me">
+            <h2>Me</h2>
+            <p>
+                山岡　和未<br>
+                東京都市大学デザイン・データ科学部<br>
+                吉川ゼミ・溝上ゼミ所属
+            </p>
+            <p>
+                専門：地域創生、well-being、UXD<br>
+                スキル：TOEIC、書写検定
+            </p>
+            </section>
+            <section id="works">
+            <h2>Works</h2>
+            <div class="works-controls">
+                <select id="category">
+                    <option value="all">すべてのカテゴリ</option>
+                </select>
+                <select id="sort">
+                    <option value="new">新しい順</option>
+                    <option value="old">古い順</option>
+                    <option value="title">タイトル順</option>
+                </select>
+            </div>
+            <div id="works-grid"></div>
+            </section>
+        </main>
+        <footer>
+            <span>© 2026 Nagomi Yamaoka</span>
+        </footer>
+        <script src="works.js"></script>
+    </body>
+</html>

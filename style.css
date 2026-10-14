@@ -1,0 +1,148 @@
+* {box-sizing: border-box;}
+body {
+    background: cornsilk;
+    color: darkgreen;
+    transition: background-color 1s;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+}
+a {
+    color: green;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 50px;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    padding: 0px 30px;
+    background: cornsilk;
+    height: 100px;
+    top: 0;
+    font-size: 22px;
+}
+nav {
+    display: flex;
+    gap: 30px;
+}
+section {
+    padding: 10px 30px;
+}
+footer {
+    padding: 20px 30px;
+    font-size: 11px;
+}
+nav a:hover {
+    color: rgb(0, 215, 0);
+}
+*/
+#top{
+    padding-top:75px;
+}
+.top-image {
+  display: block;
+  margin: 0 auto;
+}
+
+#works-grid{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    gap: 30px;
+}
+
+.work-card img {
+    width: 100%;
+    object-fit: cover;
+    clip-path: none;
+    display: block;
+}
+
+.work-card {
+    border: 1px solid #000000;
+  border-radius: 120px 120px 16px 16px;
+  overflow: hidden;
+
+}
+
+.work-card h4{
+    margin: 15px 15px 5px;
+}
+
+.work-card p{
+    margin:0 15px 15px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.work-card:hover{
+    opacity:0.7;
+}
+
+.works-controls{
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+    margin-bottom:30px;
+}
+
+.works-controls select{
+    padding:10px;
+    font-size:16px;
+}
+
+.work-category{
+    font-size: 4px;
+    padding-top:14px;
+    color: rgb(108, 0, 0);
+}
+
+.work-year{
+    font-size:10px;
+    margin-top:10px;
+}
+
+/*スマートフォン*/
+@media screen and (max-width: 600px){
+    #top{
+        padding-top: 80px;
+    }
+    #top img{
+        width: 100%;
+    }
+    #works-grid{
+        grid-template-columns: 1fr;
+    }
+    .works-controls{
+        flex-direction: column;
+    }
+}
+
+/*天気*/
+#weather-icon{
+    font-size: 45px;
+    margin: 0;
+    text-align: center;
+}
+
+
+/*曇り*/
+body.weather-cloudy{
+    background-color: rgb(166, 201, 176);
+}
+body.weather-cloudy .site-header{
+    background-color:  rgb(166, 201, 176);
+}
+
+/*雨*/
+body.weather-rainy{
+    background-color: rgb(141, 151, 168);
+}
+body.weather-cloudy .site-header{
+    background-color:   rgb(141, 151, 168);
+}
