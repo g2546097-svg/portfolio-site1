@@ -57,17 +57,21 @@ nav a:hover {
 }
 
 .work-card img {
-    width: 100%;
+    width: 80%;
     object-fit: cover;
     clip-path: none;
     display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
 }
 
 .work-card {
     border: 1px solid #000000;
-  border-radius: 120px 120px 16px 16px;
-  overflow: hidden;
-
+    border-radius: 120px 120px 16px 16px;
+    overflow: hidden;
+    width: 50%;
+    height: px;
 }
 
 .work-card h4{
